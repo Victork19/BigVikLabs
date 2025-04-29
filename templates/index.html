@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>BigVik - Developer & Innovator</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+
+  <link href="{{ url_for('static', filename='assets/img/favicon-32x32.png') }}" rel="icon">
+  <link href="{{ url_for('static', filename='assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{{ url_for('static', filename='assets/css/main.css') }}" rel="stylesheet">
+
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="{{ url_for('home') }}" class="logo d-flex align-items-center">
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">BigVikLabs</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-img.jpg" alt="" data-aos="fade-in">
+
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up"
+        data-aos-delay="100">
+        <h2>I am Victor Uko</h2>
+        <p><span class="typed"
+            data-typed-items="FastAPI Backend Developer, Python Developer, Web3 Community Manager, Startup Founder"></span>
+        </p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-md-6">
+
+            <div class="row justify-content-between gy-4">
+              <div class="col-lg-5">
+                <img src="{{ url_for('static', filename='assets/img/pfp.jpeg') }}" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-7 about-info">
+                <p><strong>Name: </strong> <span>Victor Uko</span></p>
+                <p><strong>Profile: </strong> <span>Software Engineer</span></p>
+                <p><strong>Email: </strong> <span>ukovictor8@gmail.com</span></p>
+                <p><strong>Phone: </strong> <span>+234 902 274 5163</span></p>
+              </div>
+            </div>
+
+            <div class="skills-content skills-animation">
+
+              <h5>Skills</h5>
+
+              <div class="progress">
+                <span class="skill"><span>FastAPI (Backend)</span> <i class="val">85%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Flet (Mobile UI)</span> <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Python</span> <i class="val">85%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Database Management</span> <i class="val">65%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Celery (Background Jobs)</span> <i class="val">65%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Redis (Caching, Queues)</span> <i class="val">50%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Backend Architecture</span> <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Community Management (Web3)</span> <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div><!-- End Skills Item -->
+
+
+
+              <div class="progress">
+                <span class="skill"><span>Web3 Fundamentals</span> <i class="val">70%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div><!-- End Skills Item -->
+
+
+
+
+
+
+
+              <div class="progress">
+                <span class="skill"><span>Project Structuring & Management</span> <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Entrepreneurship & Startup Skills</span> <i class="val">70%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Social Media Strategy</span> <i class="val">50%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div><!-- End Skills Item -->
+
+
+
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-me">
+              <h4>About me</h4>
+              <p>
+                I’m Victor Uko, a self-taught programmer and the Founder &amp; CEO of DappTrack, a soon-to-launch Web3
+                platform designed to revolutionize the way users track and discover airdrops. With a focus on seamless
+                integration and an intuitive mobile interface, I’m building a solution that simplifies Web3
+                opportunities for everyone.
+              </p>
+              <p>
+                Over the last several months, I've been working tirelessly on developing the backend and frontend of
+                DappTrack, ensuring that the app is built on a strong foundation of scalable architecture and clean,
+                user-friendly design.
+              </p>
+              <p>
+                As a founder, I’m also deeply involved in community engagement, managing a 500+ member WhatsApp group
+                where I share and discuss the latest Web3 trends. This experience has fueled my passion for crafting
+                tools that can empower the broader blockchain community.
+              </p>
+              <p>
+                DappTrack will be launching soon, and I’m excited to connect with like-minded individuals, enthusiasts,
+                and developers to shape the future of Web3. If you're interested in the project or just want to chat
+                about the world of blockchain, feel free to reach out!
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>Professional Experience and Educational Background</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Victor Uko</h4>
+              <p><em>Self-taught full-stack developer and Founder &amp; CEO of DappTrack. Specializing in scalable
+                  backend architectures and cross-platform mobile interfaces for Web3 applications.</em></p>
+              <ul>
+                <li>Imo, Nigeria</li>
+                <li>+234 902 274 5163</li>
+                <li>ukovictor8@gmail.com</li>
+              </ul>
+            </div><!-- End Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Technology in Information Technology</h4>
+              <h5>2021 – Present (400L)</h5>
+              <p><em>Federal University of Technology, Owerri (FUTO)</em></p>
+            </div><!-- End Resume Item -->
+            <div class="resume-item">
+              <h4>Self-Taught Programmer</h4>
+              <h5>2022 – Present</h5>
+              <p><em>Independent study through online courses, tutorials, and hands-on projects in Python, FastAPI,
+                  Flet, and Web3 development.</em></p>
+            </div><!-- End Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+
+            <div class="resume-item">
+              <h4>Founder &amp; CEO, DappTrack</h4>
+              <h5>2024 – Present</h5>
+              <p><em>Remote</em></p>
+              <ul>
+                <li>Developed an internal Flet prototype to validate critical FastAPI backend endpoints.</li>
+                <li>Architected and implemented scalable background processing with Celery and optimized performance
+                  using Redis.</li>
+                <li>Partnering with a co-founder and UI/UX designers to build and launch the production React Native
+                  version, iterating based on insights from a 500+ member Web3 community.</li>
+                <li>Owning the project roadmap, equity structure, and leading preparations for the upcoming beta
+                  release.</li>
+              </ul>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item">
+              <h4>Web3 Community Manager</h4>
+              <h5>2023 – Present</h5>
+              <p><em>WhatsApp Group</em></p>
+              <ul>
+                <li>Curate and share daily Web3 airdrops and insights to 500+ active members.</li>
+                <li>Maintain engagement through polls, discussions, and resource sharing.</li>
+              </ul>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item">
+              <h4>Freelance Blockchain Content Creator</h4>
+              <h5>2025</h5>
+              <p><em>Remote</em></p>
+              <ul>
+                <li>Authored technical threads on blockchain research and Sui development, sharing insights with the
+                  community.</li>
+                <li>Won a thread contest for KGen, gaining recognition for blockchain knowledge and writing skills.</li>
+                <li>Recently wrote a technical thread for a project collaborating with KGen, further contributing to the
+                  space.</li>
+              </ul>
+            </div><!-- End Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>What I Offer</p>
+      </div><!-- End Section Title -->
+    
+      <div class="container">
+        <div class="row gy-4">
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-code-slash"></i></div>
+              <a href="{{ url_for('view_service', service_slug='api-backend') }}" class="stretched-link">
+                <h3>API & Backend Development</h3>
+              </a>
+              <p>Designing and building RESTful APIs with FastAPI, implementing Celery for background processing, and integrating Redis for caching and queue management.</p>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-phone"></i></div>
+              <a href="{{ url_for('view_service', service_slug='mobile-app') }}" class="stretched-link">
+                <h3>Mobile App Development</h3>
+              </a>
+              <p>Building cross-platform mobile applications with Flet, focusing on rapid prototyping and clean UI design.</p>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-graph-up"></i></div>
+              <!-- {{ url_for('view_service', service_slug='web3-airdrop') }} -->
+              <a href="#" class="stretched-link">
+                <h3>Web3 & Airdrop Solutions (Coming Soon)</h3>
+              </a>
+              <p>Powering the future of airdrop discovery and management across chains — launching soon.</p>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-people"></i></div>
+              <a href="{{ url_for('view_service', service_slug='community-management') }}" class="stretched-link">
+                <h3>Community Management</h3>
+              </a>
+              <p>Growing and engaging communities over 500 members to drive interaction, feedback loops, and sustained growth.</p>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-journal-text"></i></div>
+              <a href="{{ url_for('view_service', service_slug='technical-writing') }}" class="stretched-link">
+                <h3>Technical Writing & Content</h3>
+              </a>
+              <p>Crafting award-winning Twitter threads and technical documentation that translate complex topics into clear, engaging content.</p>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-bar-chart"></i></div>
+              <a href="{{ url_for('view_service', service_slug='product-strategy') }}" class="stretched-link">
+                <h3>Product Strategy & Roadmapping</h3>
+              </a>
+              <p>Defining project roadmaps, equity structures, and launch plans to ensure sustainable product growth and stakeholder alignment.</p>
+            </div>
+          </div><!-- End Service Item -->
+    
+        </div>
+      </div>
+    </section><!-- /Services Section -->
+    
+
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section accent-background">
+      <img src="{{ url_for('static', filename='assets/img/stats-bg.jpg') }}" alt="" data-aos="fade-in">
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1"
+                class="purecounter">500</span>
+              <p>Community Members</p>
+            </div>
+          </div><!-- End Stats Item -->
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1"
+                class="purecounter">10</span>
+              <p>Prototypes Built</p>
+            </div>
+          </div><!-- End Stats Item -->
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="2000" data-purecounter-duration="1"
+                class="purecounter">3000</span>
+              <p>Hours of Development</p>
+            </div>
+          </div><!-- End Stats Item -->
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter">3+</span>
+              <p>Years of Coding</p>
+            </div>
+          </div><!-- End Stats Item -->
+        </div>
+      </div>
+    </section><!-- /Stats Section -->
+
+   <!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Portfolio</h2>
+    <p>A selection of my web, mobile and API projects.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+        <li data-filter="*" class="filter-active">All</li>
+        <li data-filter=".filter-web">Websites</li>
+        <li data-filter=".filter-app">Apps</li>
+        <li data-filter=".filter-api">API</li>
+        <li data-filter=".filter-proto">Prototypes</li>
+      </ul><!-- End Portfolio Filters -->
+
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+    
+
+        <!-- School Assignment Website 2 -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+          <img src="{{ url_for('static', filename='assets/img/portfolio/evolvetech.png') }}" class="img-fluid" alt="School Site">
+          <div class="portfolio-info">
+            <h4>Tech Event Site </h4>
+            <p>Interactive web app with form handling and basic API integration.</p>
+            <a href="https://evolvetek.onrender.com/" title="View Live" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+    
+        <!-- API -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-api">
+          <img src="{{ url_for('static', filename='assets/img/portfolio/dapptrack_api.png') }}" class="img-fluid" alt="Telegram Bot">
+          <div class="portfolio-info">
+            <h4>DappTrack API (Private)</h4>
+            <p>Private FastAPI backend powering DappTrack. Supports JWT auth, multi-chain airdrop tracking, FCM notifications, and background job scheduling.</p>
+            <a href="#" title="Source on GitHub" class="details-link"><i class="bi bi-github"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <!-- Flet Prototype -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app filter-proto">
+          <img src="{{ url_for('static', filename='assets/img/portfolio/dapptrack_ui.jpg') }}" class="img-fluid" alt="Flet Prototype">
+          <div class="portfolio-info">
+            <h4>Flet Prototype</h4>
+            <p>Internal prototype to validate FastAPI endpoints and UI flows.</p>
+            <a href="#" title="Demo" class="details-link"><i class="bi bi-eye"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        
+
+      </div><!-- End Portfolio Container -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Portfolio Section -->
+
+
+<!-- Pricing Section -->
+<section id="pricing" class="pricing section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Pricing</h2>
+    <p>My standard service rates (all fees in USD)</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4 gx-lg-5">
+
+      <div class="col-lg-6">
+        <div class="pricing-item d-flex justify-content-between">
+          <h3>API & Backend Development</h3>
+          <p class="small text-muted">FastAPI, Flask, scalable REST APIs & integrations</p>          <h4>$30/hr</h4>
+        </div>
+      </div><!-- End Pricing Item -->
+
+      <div class="col-lg-6">
+        <div class="pricing-item d-flex justify-content-between">
+          <h3>Mobile Prototyping (Flet)</h3>
+          <p class="small text-muted">Cross-platform UIs with Flet, perfect for MVPs</p>
+          <h4>$25/hr</h4>
+        </div>
+      </div><!-- End Pricing Item -->
+
+      <div class="col-lg-6">
+        <div class="pricing-item d-flex justify-content-between">
+          <h3>Technical Writing & Content</h3>
+          <p class="small text-muted">Docs, blog posts, threads, and dev-focused content</p>
+          <h4>$20/hr</h4>
+        </div>
+      </div><!-- End Pricing Item -->
+
+      <div class="col-lg-6">
+        <div class="pricing-item d-flex justify-content-between">
+          <h3>Community Management</h3>
+          <p class="small text-muted">Web3-focused growth, support, and engagement</p>
+          <h4>$15/hr</h4>
+        </div>
+      </div><!-- End Pricing Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Pricing Section -->
+
+
+    <!-- Faq Section -->
+<section id="faq" class="faq section">
+  <div class="container">
+    <div class="row gy-4">
+
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="content px-xl-5">
+          <h3><span>Common </span><strong>Questions</strong></h3>
+          <p>Answers to frequently asked questions about my work, services, and processes.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+        <div class="faq-container">
+
+          <div class="faq-item faq-active">
+            <h3><span class="num">1.</span> <span>What services do you offer?</span></h3>
+            <div class="faq-content">
+              <p>I provide API & backend development, mobile prototyping with Flet, Web3 & airdrop solutions, community management, technical writing, and product strategy consulting.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item -->
+
+          <div class="faq-item">
+            <h3><span class="num">2.</span> <span>How can I hire you?</span></h3>
+            <div class="faq-content">
+              <p>You can reach out via the contact form on this site or email me directly at <a href="mailto:ukovictor8@gmail.com">ukovictor8@gmail.com</a> to discuss your project requirements.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item -->
+
+          <div class="faq-item">
+            <h3><span class="num">3.</span> <span>What is your typical development process?</span></h3>
+            <div class="faq-content">
+              <p>I start with requirements gathering, then prototype key features, build and test iteratively, and finally deploy with ongoing monitoring and support.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item -->
+
+          <div class="faq-item">
+            <h3><span class="num">4.</span> <span>Which technologies do you specialize in?</span></h3>
+            <div class="faq-content">
+              <p>My expertise includes Python, FastAPI, Flet, Redis, Celery, and Flask.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item -->
+
+          <div class="faq-item">
+            <h3><span class="num">5.</span> <span>Do you provide ongoing support?</span></h3>
+            <div class="faq-content">
+              <p>Yes—maintenance, updates, and support packages are available. Contact me to tailor a plan that suits your needs.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- /Faq Section -->
+
+
+    
+
+   <!-- Contact Section -->
+<section id="contact" class="contact section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Let's build something amazing together. Feel free to reach out!</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+      <div class="row gy-5">
+
+        <div class="col-lg-6">
+          <div class="info-item d-flex align-items-center">
+            <i class="bi bi-envelope flex-shrink-0"></i>
+            <div>
+              <h3>Email</h3>
+              <p><a href="mailto:ukovictor8@gmail.com">ukovictor8@gmail.com</a></p> <!-- update this with your real email -->
+            </div>
+          </div>
+        </div><!-- End Info Item -->
+
+        <div class="col-lg-6">
+          <div class="info-item d-flex align-items-center">
+            <i class="bi bi-twitter-x flex-shrink-0"></i>
+            <div>
+              <h3>Twitter</h3>
+              <p><a href="https://x.com/_bigvik">@_bigvik</a></p> <!-- your twitter handle -->
+            </div>
+          </div>
+        </div><!-- End Info Item -->
+
+        <div class="col-lg-4">
+          <div class="info-item d-flex align-items-center">
+            <i class="bi bi-linkedin flex-shrink-0"></i>
+            <div>
+              <h3>LinkedIn</h3>
+              <p><a href="https://linkedin.com/in/victor-uko">https://linkedin.com/in/victor-uko</a></p> <!-- update this with your LinkedIn -->
+            </div>
+          </div>
+        </div><!-- End Info Item -->
+
+      </div>
+    </div>
+
+    <form id="contactForm" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+      <div class="row gy-4">
+    
+        <div class="col-md-6">
+          <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+        </div>
+    
+        <div class="col-md-6">
+          <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+        </div>
+    
+        <div class="col-md-12">
+          <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+        </div>
+    
+        <div class="col-md-12">
+          <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+        </div>
+    
+        <div class="col-md-12 text-center">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your message has been sent. Thank you!</div>
+    
+          <button type="submit">Send Message</button>
+        </div>
+    
+      </div>
+    </form><!-- End Contact Form -->
+    
+
+  </div>
+
+</section><!-- /Contact Section -->
+
+
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">BigVikLabs</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://x.com/_bigvik"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://linkedin.com/in/victor-uko"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        Designed by <a href="">BigVikLabs</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", async function(e) {
+        e.preventDefault();
+    
+        const form = e.target;
+        const data = new FormData(form);
+        const responseDiv = form.querySelector(".sent-message");
+        const errorDiv = form.querySelector(".error-message");
+        const loadingDiv = form.querySelector(".loading");
+    
+        loadingDiv.style.display = "block";
+        responseDiv.style.display = "none";
+        errorDiv.style.display = "none";
+    
+        try {
+            const res = await fetch("/contact", {
+                method: "POST",
+                body: data
+            });
+    
+            const result = await res.json();
+    
+            loadingDiv.style.display = "none";
+    
+            if (res.ok) {
+                responseDiv.textContent = result.message || "Message sent successfully.";
+                responseDiv.style.display = "block";
+                form.reset();
+            } else {
+                errorDiv.textContent = result.error || "Something went wrong.";
+                errorDiv.style.display = "block";
+            }
+    
+        } catch (err) {
+            loadingDiv.style.display = "none";
+            errorDiv.textContent = "Error sending request.";
+            errorDiv.style.display = "block";
+        }
+    });
+  </script>
+    
+  <!-- Vendor JS Files -->
+  <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/aos/aos.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/typed.js/typed.umd.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/waypoints/noframework.waypoints.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+
+  <!-- Main JS File -->
+  <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+
+</body>
+
+</html>
